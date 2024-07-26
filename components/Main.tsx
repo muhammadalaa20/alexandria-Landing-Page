@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Main({ user, isAuthenticated }: { user: any, isAuthenticated: boolean }) {
     const pathname = usePathname()
     return (
-        <main className="flex min-h-screen items-center justify-center p-5">
+        <main className="flex min-h-[90vh] items-center justify-center p-5">
             <div className="bg-white p-8 shadow-xl text-start z-50 rounded-tl-[60px] rounded-br-[60px] w-4/5 xl:w-1/2 lg:w-1/2">
                 <div className="flex flex-col xl:flex-row lg:flex-row md:flex-row sm:flex-row gap-5 items-center justify-start mb-5">
                     <Image src="/light.png" width={40} height={40} alt="logo" className="rounded-full" />
@@ -19,7 +19,7 @@ export default function Main({ user, isAuthenticated }: { user: any, isAuthentic
                 </div>
                 <div className="flex items-center justify-end gap-5">
                     <RegisterLink className="text-primary hover:scale-110 font-bold">Sign Up</RegisterLink>
-                    <LoginLink className="text-primary hover:scale-110 font-bold hidden xl:block lg:block md:block sm:block">Sign in</LoginLink>
+                    <LoginLink className="text-primary hover:scale-110 font-bold">Sign in</LoginLink>
                 </div>
             </div>
             <video
